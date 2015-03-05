@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# start rsyslog
+/etc/init.d/rsyslog start
+
+# start memcached
+/etc/init.d/memcached start
+
+
+# start httpd
+/etc/init.d/httpd start
+
+
+if [[ "$1" == "" ]]; then
+	sleep infinity
+else
+	exec $@
+fi
+
