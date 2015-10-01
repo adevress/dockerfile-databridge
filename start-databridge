@@ -3,10 +3,6 @@
 # start rsyslog
 /etc/init.d/rsyslog start
 
-# start memcached
-/etc/init.d/memcached start
-
-
 # start httpd
 /etc/init.d/httpd start
 
